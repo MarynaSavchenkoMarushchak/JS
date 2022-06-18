@@ -1,1 +1,1 @@
-console.log('Hello,world!')
+document.querySelector('a').innerText = 'Hello, world!'
