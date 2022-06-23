@@ -1,0 +1,6 @@
+no-var
+eqeqed
+no-undef
+no-plusplus
+no-return-assign
+no-undef-init
