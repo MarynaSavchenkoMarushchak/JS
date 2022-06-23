@@ -1,11 +1,17 @@
+// let result = 0
+// while (true) {
+//   const userInput = prompt('Your number')
+//   if (!userInput) {
+//     break
+//   }
+//   result += Number(userInput)
+// }
+// console.log('Result:', +result)
 let result = 1
-let n = 1
-let m = 3
-do {
-  if (n === 1) {
-    result *= m
-    // console.log(result)
+for (let index = 10; index <= 20; index += 1) {
+  if (index % 2 === 1) {
+    continue
   }
-  m--
-} while (m <= 3)
+  result *= index
+}
 console.log(result)
