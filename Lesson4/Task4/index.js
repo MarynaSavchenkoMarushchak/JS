@@ -7,11 +7,19 @@
 //   result += Number(userInput)
 // }
 // console.log('Result:', +result)
-let result = 1
-for (let index = 10; index <= 20; index += 1) {
-  if (index % 2 === 1) {
-    continue
-  }
-  result *= index
+// let result = 1
+// for (let index = 10; index <= 20; index += 1) {
+//   if (index % 2 === 1) {
+//     continue
+//   }
+//   result *= index
+// }
+// console.log(result)
+function run() {
+    var a = 0,
+        b = 1;
+
+    if (a == b) {
+        return c;
+    }
 }
-console.log(result)
