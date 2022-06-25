@@ -1,5 +1,3 @@
-const { method } = require('lodash')
-
 let sum = 0
 
 for (let index = 1; index <= 1000; index += 1) {
