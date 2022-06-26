@@ -1,2 +1,7 @@
-function increaser(a, index) {}
-increaser(2, 4)
+function increaser(a, index) {
+  if (a > index) {
+    a += index
+  }
+  return a
+}
+console.log(increaser(8, 4))
