@@ -1,16 +1,19 @@
 const checker = (arr) => {
   if (!Array.isArray(arr)) {
     return null
-  } else {
-    // let sum = 0
-    let minEl = 0
-    // let maxEl = 0
-    for (let i = 0; i <= arr.length - 1; i += 1) {
-      if (arr[i] < arr[i + 1]) {
-        minEl = arr[i]
-      }
-    }
-    console.log(minEl)
   }
+  let minEl = arr[0]
+  let maxEl = arr[0]
+  for (let i = 0; i <= arr.length - 1; i += 1) {
+    if (minEl > arr[i]) {
+      minEl = arr[i]
+    } else if (maxEl < arr[i]) {
+      maxEl = arr[i]
+      console.log(maxEl)
+    }
+  }
+  console.log(minEl)
+  return maxEl + minEl > 1000
 }
-checker([1, 2, 3, 4])
+
+checker([80, 25, 338, 140])

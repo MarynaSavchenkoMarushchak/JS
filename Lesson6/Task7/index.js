@@ -3,7 +3,7 @@ const checkSum = (arr) => {
     return null
   } else {
     let sum = 0
-    for (index = 0; index <= arr.length - 1; index += 1) {
+    for (let index = 0; index <= arr.length - 1; index += 1) {
       sum += arr[index]
     }
     console.log(sum > 100)
