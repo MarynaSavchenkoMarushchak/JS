@@ -1,39 +1,36 @@
-/*1. input Arrey
-2. Output Array
-
-1.Создать два новых массива.
-2. Перебор в первом в порядке возростания
-3. Условие(если первый меньший, записать его, присвоить 
-    меньший следующему.
-     если второй )
-
-
-
-*/
-function sortAsc(array) {
-  let newArrrAsc = []
-  let minEl = array[0]
-  for (let i = 1; i <= array.length; i += 1) {
-    if (array[i] < minEl) {
-      minEl = array[i]
-      newArrrAsc.push(minEl)
-      minEl = array[i]
-    }
-  }
-  console.log(newArrrAsc)
-}
-sortAsc([8, 15, 7, 14])
-function compareNumbers(arr) {
-  for (let i = 0; i < arr.length - 1; i++) {
-    for (let j = i + 1; j < arr.length; j++) {
-      const a = arr[i]
-      const b = arr[j]
-      if (a > b) {
-        arr[i] = b
-        arr[j] = a
+const sortAsc = (array) => {
+  if (!Array.isArray(array)) {
+    return null
+  } else {
+    for (let i = 0; i < array.length; i += 1) {
+      for (let j = 0; j < array.length; j += 1) {
+        if (array[i] < array[j]) {
+          const temp = array[i]
+          array[i] = array[j]
+          array[j] = temp
+        }
       }
     }
   }
-
-  return arr
+  console.log(array)
+  return array
 }
+sortAsc([56, 88, 0, 23, 15])
+const sortDesc = (array) => {
+  if (!Array.isArray(array)) {
+    return null
+  } else {
+    for (let i = 0; i < array.length; i += 1) {
+      for (let j = 0; j < array.length; j += 1) {
+        if (array[i] > array[j]) {
+          const temp = array[i]
+          array[i] = array[j]
+          array[j] = temp
+        }
+      }
+    }
+  }
+  console.log(array)
+  return array
+}
+sortDesc([56, 88, 0, 23, 15])

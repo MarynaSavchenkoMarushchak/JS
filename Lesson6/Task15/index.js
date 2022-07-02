@@ -1,8 +1,11 @@
 const includes = (arr, num) => {
   for (let i = 0; i <= arr.length - 1; i += 1) {
-    if (arr[i] === num) console.log(true)
+    if (arr[i] === num) {
+      return true
+    }
   }
-  return true
+  console.log(false)
+  return false
 }
 // examples
 includes([1, 4, 8, 3], 3) // ==> true
