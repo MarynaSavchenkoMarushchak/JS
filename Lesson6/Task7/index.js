@@ -14,4 +14,4 @@ const checkSum = (arr) => {
 // examples
 checkSum([10, 10, 10]) // ===> false
 checkSum([10, 99, 1]) // ===> true
-checkSum([-6, -3, 200]) // ===> true
+checkSum([-6, -3, 0]) // ===> true

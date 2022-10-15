@@ -13,6 +13,7 @@ const checker = (arr) => {
     }
   }
   console.log(minEl)
+  console.log(maxEl + minEl > 1000)
   return maxEl + minEl > 1000
 }
 

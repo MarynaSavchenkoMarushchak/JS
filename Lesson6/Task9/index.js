@@ -7,8 +7,15 @@ function reverseArray(arr) {
       newArr.push(arr[i])
       newArr.reverse()
     }
+    // newArr.reverse()
     console.log(newArr)
     return newArr
   }
 }
 reverseArray([3, 4, 5, 6])
+// 3
+// 34
+// 435
+// 534
+// 5346
+// 6435

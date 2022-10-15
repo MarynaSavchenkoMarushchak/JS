@@ -1,5 +1,6 @@
 function swap(numbers) {
   const [start, ...rest] = numbers
+  console.log([...rest, start])
   return [...rest, start]
 }
 
@@ -12,5 +13,5 @@ function swapManual(numbers) {
   newNumbers.push(numbers[0])
   console.log(newNumbers)
 }
-swap([1, 10, 9, 11]) // ==> [10, 9, 11, 1]
+swap([8, 1, 10, 9, 11, 14]) // ==> [1,10, 9, 11, 14,8]
 swapManual([1, 10, 9, 11]) // ==> [10, 9, 11, 1]
