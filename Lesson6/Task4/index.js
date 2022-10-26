@@ -1,9 +1,8 @@
-function swap(numbers) {
-  const [start, ...rest] = numbers
+function swap(arr) {
+  const [start, ...rest] = arr
   console.log([...rest, start])
   return [...rest, start]
 }
-
 function swapManual(numbers) {
   let newNumbers = []
   for (let index = 1; index <= numbers.length - 1; index += 1) {
