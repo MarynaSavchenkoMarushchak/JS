@@ -6,13 +6,17 @@
 Если число делиться на 1 и на себя без остатка
 Если И делиться на И-1 без остатка, то оно не простое
 Если И не делиться на И-1, то выводим в консоль*/
-function primeName(num) {
-  for (let i = 1; i <= num; i += 1) {
+function getPrimes(num) {
+  for (let i = 2; i <= num; i += 1) {
+    let isPrime = true
     for (let j = 2; j < i; j += 1) {
       if (i % j == 0) {
+        isPrime = false
       }
     }
-    console.log(i)
+    if (isPrime) {
+      console.log(i)
+    }
   }
 }
-primeName(10)
+getPrimes(5)
