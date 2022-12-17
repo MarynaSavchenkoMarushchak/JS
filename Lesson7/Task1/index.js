@@ -2,6 +2,10 @@
 //output arr
 //1.Проверить все элмассива, кратные 3 вернуть в нов.массив
 
+const getSpecialNumber = (numbers) => {
+  let specialNumbers = []
+  for (let i = 0; i < numbers; i += 1) {}
+}
 // const getSpesialNumbers = (arr, count) => {
 //   if (!Array.isArray(arr)) {
 //     console.log('Not array')
@@ -45,13 +49,13 @@
 //   return result
 // }
 
-const getSpecialNumbers = (arr) => {
-  let newArr = []
-  arr.filter((i) => {
-    return newArr.push(i % 3 === 0)
-  })
-}
-console.log(getSpecialNumbers([1, 3, 51, 6, 7, 8, 9]))
+// const getSpecialNumbers = (arr) => {
+//   let newArr = []
+//   arr.filter((i) => {
+//     return newArr.push(i % 3 === 0)
+//   })
+// }
+// console.log(getSpecialNumbers([1, 3, 51, 6, 7, 8, 9]))
 
 // const getSpecialNumbers = (arr) => {
 //   const result = arr.filter((num) => {
