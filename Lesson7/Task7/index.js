@@ -1,15 +1,13 @@
-const increaseEventEl = (arr, delta) => {
+const increaseEvenEl = (arr, delta) => {
   if (!Array.isArray(arr)) {
     return null
   }
-  newArr = arr
-  newArr.forEach((i) => {
+  const newArr = []
+  arr.map((i) => {
     if (i % 2 === 0) {
-      console.log((result = i + delta))
+      newArr.push(i + delta)
     }
   })
-  //   console.log(newArr.push(result))
   return newArr
 }
-
-increaseEventEl([1, 2, 3, 4, 5, 6], 10)
+console.log(increaseEvenEl([-10, 0, 2, 3, 4, 5, 6], 10))

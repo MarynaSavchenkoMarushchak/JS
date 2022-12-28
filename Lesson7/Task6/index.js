@@ -7,4 +7,4 @@ const reverseArray = (arr) => {
   return arrNew
 }
 console.log(reverseArray([3, 6, 8, 9, 0]))
-console.log(reverseArray('Takaja'))
+console.log(reverseArray('YellowAndBlue'))
