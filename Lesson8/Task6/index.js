@@ -1,14 +1,35 @@
-/* eslint-disable no-restricted-syntax */
-
-/* Для решения этой задачи используй for..in цикл. В реальных проектах это плохая практика,
- * лучше использовать методы класса Object - keys(), values(), entries(). Но мы с ними пока не познакомитись.
- * Чтобы eslint не ругался на эту ошибку, для этой задачи он отключен аннотацией eslint-disable
- * */
+// const pickProps = (obj, props) => {
+//   let newObj = {}
+//   for (let key in obj) {
+//     for (let i of props) {
+//       if (key === i) {
+//         console.log(key + ':', obj[key])
+//         const newKey = key
+//         const newProps = obj[key]
+//         newObj[newKey] = newProps
+//         console.log(newObj) / 9
+//       } else if ((key = i)) {
+//         console.log(newObj)
+//         return {}
+//       }
+//     }
+//   }
+//   console.log(newObj)
+//   return newObj
+// }
 
 const pickProps = (obj, props) => {
-  // put your code here
+  let newObj = {}
+  for (let key in obj) {
+    for (let i of props) {
+      if (i === key) {
+        const newKey = key
+        const newProps = obj[key]
+        newObj[newKey] = newProps
+      }
+    }
+  }
+  console.log(newObj)
+  return newObj
 }
-
-// examples
-pickProps({ a: 1, b: 2, c: 3 }, ['a', 'c']) // ==> { a: 1, c: 3 }
-pickProps({ a: 1, b: 2, c: 3 }, ['a', 'c', 'd', 'hex']) // ==> { a: 1, c: 3 }
+pickProps({ Mark: 1, Bob: 2, Cat: 3 }, ['Mark', 'Cat', 'Bob']) // ==> { a: 1, c: 3 }
