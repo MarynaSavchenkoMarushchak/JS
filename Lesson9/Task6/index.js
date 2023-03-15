@@ -1,3 +1,5 @@
+//input Объект
+//output Массив имен жителей(плоский массив строк)
 const obj = {
   room1: [
     { name: 'Jack' },
@@ -5,18 +7,25 @@ const obj = {
     { name: 'Ann' },
     { name: 'Vasyl' },
   ],
-  room2: [{ name: 'Dan' }, { name: 'Tom' }, { name: 'Mary' }, { name: 'Sem' }],
-  room3: [
-    { name: 'Lyusy' },
-    { name: 'Djim' },
-    { name: 'Romy' },
-    { name: 'Lesly' },
-  ],
 }
 
-//input Obj
-//output Arr with value
 const getPeople = (obj) => {
-  const sortObj = Object.keys(obj).forEach((i) => console.log(i))
+  const arr = []
+  arr[0] = {
+    name: 'Jack',
+  }
+  arr[1] = {
+    name: 'Andrey',
+  }
+  arr[2] = {
+    name: 'Ann',
+  }
+  arr[3] = {
+    name: 'Vasyl',
+  }
+  console.log(arr)
+  newObj = Object.values(obj)
+  console.log(newObj)
+  arr.forEach((i) => console.log(i))
 }
 getPeople(obj)
