@@ -1,36 +1,24 @@
-//input obj
-//output objClone
+// //input obj
+// //output objClone
 
-/*
-1.Создать новый объект
-2.Создать новые переменные ключей-свойств с помощью метода Энтриес
-3.Записать в новый объект(присвоить) пары ключи-объекты из новых переменных
+// 1.Создать новый объект
+// 2.С помощью цикла Фор ин записать все ключи с objв  newObj
 
-*/
-const copyObj = (obj, player) => {
-  const copyObj = Object.assign(obj, player)
-  console.log(copyObj)
-  return copyObj
-}
-copyObj(
-  { name: 'Kherson', stree: '49KGD', owne: 'Maryna' },
-  { city: 'Kiew', street: 'Dovjenko', owner: 'Semen' }
-)
-const copyObj1 = (obj) => {
-  const newObj = { ...obj }
+const copyObj = (obj) => {
+  const newObj = {}
+  console.log(obj)
   console.log(newObj)
+  for (let key in obj) {
+    newObj[key] = obj[key]
+  }
+  console.log(newObj)
+  console.log(obj === newObj)
+  return newObj
 }
-copyObj1({
-  name: 'Kherson',
-  stree: '49KGD',
-  owne: 'Maryna',
+
+copyObj({
+  city: 'Kherson',
+  street: '49KGD',
+  owner: 'Maryna',
   father: { name: 'Bob', age: 56 },
 })
-const copyObj2 = (obj) => {
-  const copyObj = Object.entries(obj)
-  const newObj = Object.assign(copyObj)
-  console.log(copyObj)
-  console.log(newObj)
-  return copyObj
-}
-copyObj2({ name: 'Kherson', stree: '49KGD', owne: 'Maryna' })
